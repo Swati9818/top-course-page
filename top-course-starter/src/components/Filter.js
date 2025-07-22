@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/filter.css';
+
 const Filter = ({ filterData }) => {
 
   return (
@@ -30,4 +30,5 @@ const Filter = ({ filterData }) => {
     </div>
   )
 }
+
 export default Filter; 

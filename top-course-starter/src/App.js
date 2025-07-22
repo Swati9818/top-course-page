@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from "react";
-import { apiUrl, filterData } from "./static-files/data";
+import { apiUrl, filterData } from "./data";
 import Navbar from "./components/Navbar";
 import Filter from "./components/Filter";
 import Cards from "./components/Cards";
@@ -16,8 +16,6 @@ const App = () => {
       try {
         const res = await fetch(apiUrl);
         const output = await res.json();
-
-        console.log("Fetched data:", output);
         //save data into a variable
         setCourses(output.data);
       }
