@@ -1,4 +1,6 @@
 import React from 'react'
+import '../styles/filter.css';
+const Filter = ({ filterData }) => {
 
 const Filter = ({ filterData }) => {
 

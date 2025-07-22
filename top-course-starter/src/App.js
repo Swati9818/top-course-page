@@ -16,6 +16,8 @@ const App = () => {
       try {
         const res = await fetch(apiUrl);
         const output = await res.json();
+
+        console.log("Fetched data:", output);
         //save data into a variable
         setCourses(output.data);
       }
